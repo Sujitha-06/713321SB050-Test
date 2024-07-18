@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call</title>
+    <link rel="shortcut icon" href="Images/18.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgb(102, 190, 193);
+    color:brown;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.call-list {
+    width: 30%;
+    background-color:rgb(101, 178, 181);
+    padding: 1em;
+    border-right: 1px solid #ddd;
+}
+
+.call-list h2 {
+    margin-top: 0;
+}
+
+.call-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.call-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.call-list li:hover {
+    background-color: #f5f5f5;
+}
+
+.call-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.call-list h3 {
+    margin-top: 0;
+}
+
+.call-list p {
+    font-size: 14px;
+    color: #666;
+}
+
+.call-window {
+    width: 70%;
+    padding: 1em;
+    background-color: rgb(140, 212, 214);
+}
+
+.call-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.call-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.call-messages {
+    padding: 10px;
+}
+
+.call-messages li {
+    margin-bottom: 10px;
+}
+
+.call-messages li:last-child {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="message.html"><i class="fa fa-fw fa-envelope"></i>&nbsp;Chats</a></li>
+                <li><a href="call.html"><i class="fa fa-phone"></i> &nbsp;Calls</a></li>
+                <li><a href="status.html"><i class='far fa-bell'></i>&nbsp;Status</a></li>
+                <li><a href="settings.html"><i class="fa fa-gear"></i>&nbsp;Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="call-list">
+            <h2>CALLS</h2>
+            <ul id="call">
+                <li>
+                    <img src="Images/12.png" alt="Hectrine Profile Picture">
+                    <h3>Hectrine</h3>
+                    <p>Yesterday 10.40 p.m</p>
+                </li>
+                <li>
+                    <img src="Images/13.gif" alt="Mickey Profile Picture">
+                    <h3>Mickey</h3>
+                    <p>June 14 5.00 p.m</p>
+                </li>
+                <li>
+                    <img src="Images/14.jpg" alt="Dectrize Profile Picture">
+                    <h3>Dectrize</h3>
+                    <p>May 30 7.00 a.m</p>
+                </li>
+            </ul>
+        </section>
+        <section class="call-window">
+            <h2>Call Window</h2>
+            <div class="call-header">
+                <img src="Images/12.png" alt="Hectrine Profile Picture">
+                <h3>Hectrine</h3>
+            </div>
+            <div class="calls">
+                <!-- chat messages will be rendered here -->
+            </div>
+            <form>
+        
+                <button id="send-button" >CALL</button>
+            </form>
+        </section>
+    </main>
+    <script src="call.js"></script>
+</body>
+</html>

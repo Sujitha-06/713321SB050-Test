@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/6.jpg" type="image/x-icon">
+</head>
+<body>
+    
+	<div class="container">
+        <center>
+		<form id="registration-form" action="login.html">
+			<h2>Registration Form</h2>
+            <br><br>
+			<label for="username" >Username:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" id="username" name="username" required pattern="[a-zA-z]+"  placeholder="Eg.Sujitha"><br><br>
+			<label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="email" id="email" name="email" required placeholder="sujithastalinraja06@gmail.com"><br><br>
+			<label for="password"> Enter Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="password" id="password" name="password" pattern=".{8,}" title="8 or more characters" required placeholder="Sujitha@06"><br><br>
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password" required placeholder="Re-Enter Password"><br><br>
+			<label for="phone">Phone Number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="tel" id="phone" name="phone" required  pattern="[0-9]{10}" placeholder="9976331989"><br><br><br>
+			<input type="submit" value="Register" >
+        </center>
+		</form>
+	</div>
+
+</body>
+</html>

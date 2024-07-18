@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/5.webp" type="image/x-icon">
+    <style>
+        .form {
+	width: 300px;
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 50px auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="button"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	background-color: #3e8e41;
+}
+body{
+    background-image: url(Images/10.jpg);
+    background-size: cover;
+    image-resolution: 100;
+}
+    </style>
+</head>
+<body>
+
+	<div class="form">
+		<form>
+            <img src="Images/9.png" alt="avatar" class="avatar" width="=200" height="200">
+			<h2>Login</h2>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br>
+			<a href="message.html"><input type="button" value="LOGIN" ></a>
+		</form>
+	</div>
+    
+</body>
+</html>
